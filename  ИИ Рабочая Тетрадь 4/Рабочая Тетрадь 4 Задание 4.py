@@ -6,12 +6,14 @@ from sklearn.metrics import mean_squared_error, r2_score
 import matplotlib.pyplot as plt
 
 # Загрузка данных
-url = "https://raw.githubusercontent.com/aniruddhachoudhury/Red-WineQuality/master/winequality-red.csv"
-data = pd.read_csv(url, sep=";")
+url = "https://raw.githubusercontent.com/aniruddhachoudhury/Red-Wine-Quality/master/winequality-red.csv"
+data = pd.read_csv(url, sep=",")
+data1 = pd.DataFrame(data)
+
 
 # Выбор предикторов (независимых переменных) и зависимой переменной
-X = data.drop("quality", axis=1)  # Признаки (все, кроме 'quality')
-y = data["quality"]  # Зависимая переменная ('quality')
+X = data1.drop('quality', axis = 1)  # Признаки (все, кроме 'quality')
+y = data1['quality']  # Зависимая переменная ('quality')
 
 # Разделение данных на тренировочный и тестовый наборы
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)

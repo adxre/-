@@ -5,7 +5,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 
 # Загрузка данных из CSV-файла
-url = "https://raw.githubusercontent.com/AnnaShestova/salary-years-simple-linearregression/master/Salary_Data.csv"
+url = "https://raw.githubusercontent.com/AnnaShestova/salary-years-simple-linear-regression/master/Salary_Data.csv"
 data = pd.read_csv(url)
 
 # Разделение данных на признаки (опыт работы) и целевую переменную (заработная плата)

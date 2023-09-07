@@ -6,7 +6,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 import matplotlib.pyplot as plt
 
 # Загрузим данные о зависимости заработной платы от опыта работы
-url = "https://raw.githubusercontent.com/AnnaShestova/salary-years-simple-linearregression/master/Salary_Data.csv"
+url = "https://raw.githubusercontent.com/AnnaShestova/salary-years-simple-linear-regression/master/Salary_Data.csv"
 data = pd.read_csv(url)
 
 # Разделим данные на признаки (опыт работы) и целевую переменную (заработная плата)

@@ -4,7 +4,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 
 # Загрузка данных
-url = "https://raw.githubusercontent.com/aniruddhachoudhury/Red-WineQuality/master/winequality-red.csv"
+url = "https://raw.githubusercontent.com/aniruddhachoudhury/Red-Wine-Quality/master/winequality-red.csv"
 wine_data = pd.read_csv(url)
 
 # Посмотрим на первые несколько строк данных
